@@ -1,0 +1,97 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous')
+  link(rel='stylesheet' href='../public/bootstrap/css/font-awesome-5.8.1.css')
+  link(rel='stylesheet' href='../public/bootstrap/css/bootstrap.css')
+  link(rel='stylesheet' href='../public/bootstrap/css/mdb.css')
+  link(rel='stylesheet' href='../public/bootstrap/css/style.css')
+  title Express PUG
+// Main Navbar
+nav.navbar.navbar-expand-md.navbar-dark.bg-primary
+  a.navbar-brand(href='/') Express PUG
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarCollapse.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item.px-2
+        a.nav-link(href='/')
+          i.fa.fa-home
+          |  Home
+      li.nav-item.px-2
+        a.nav-link(href='/about')
+          i.fa.fa-id-card
+          |  About Us
+      li.nav-item.px-2
+        a.nav-link(href='/services')
+          i.fa.fa-cogs
+          |  Services
+      li.nav-item.px-2
+        a.nav-link(href='/profile')
+          i.fa.fa-user-circle
+          |  Profile
+      li.nav-item.px-2.active
+        a.nav-link(href='/contact')
+          i.fa.fa-envelope
+          |  Contact Us
+
+// Contact Success Page
+.container.m-3
+  .row
+    .col.m-auto
+      .alert.alert-primary.animated.flipInY(role='alert')
+        button.close(data-dismiss='alert')
+          i.fa.fa-times-circle
+        h2.alert-heading Thank You! Mr . #{userInfo.username}
+        p.lead We found the following data
+        ul.list-group
+          li.list-group-item
+            | NAME :
+            span.font-weight-bold.text-primary #{userInfo.username}
+          li.list-group-item
+            | EMAIL :
+            span.font-weight-bold.text-primary #{userInfo.email}
+          li.list-group-item
+            | DESIGNATION :
+            span.font-weight-bold.text-primary #{userInfo.designation}
+          li.list-group-item
+            | ADDRESS :
+            span.font-weight-bold.text-primary #{userInfo.address}
+        hr
+        p.mb-0
+          | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+
+
+// Main Content Section
+section
+  .jumbotron
+    h1.display-4.text-primary Get In Touch
+    p.lead
+      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at aut autem dicta earum eius, est eveniet illum inventore ipsam itaque labore nam nemo, nihil reprehenderit tempora totam! Amet cupiditate ea excepturi explicabo fugiat fugit itaque quas quos tempore, vitae.
+
+    p.lead
+      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad architecto autem consectetur dolore excepturi fugiat hic id illo labore, maxime molestias nihil nulla optio quisquam, quo recusandae ullam, vero. Commodi doloremque eos expedita fugit id nemo nobis obcaecati odit provident, saepe suscipit tenetur totam unde veniam voluptatibus? Illo, voluptas!
+    p.lead
+      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at aut autem dicta earum eius, est eveniet illum inventore ipsam itaque labore nam nemo, nihil reprehenderit tempora totam! Amet cupiditate ea excepturi explicabo fugiat fugit itaque quas quos tempore, vitae.
+    hr.my-4
+    p
+      | It uses utility classes for typography and spacing to space content out within the larger container.
+    a.btn.btn-primary.btn-lg(href='#' role='button') Learn more
+// Main Footer
+footer.p-3.text-white.bg-primary.text-center
+  .container
+    .row
+      .col
+        h3 Copyright &copy; 2019 , Express PUG
+        h6 All Rights Reserved
+        h6
+          | Developed &amp; Maintained by
+          a.text-white(href='https://github.com/thenaveensaggam' target='_blank')
+            i.fa.fa-snowflake
+            |  UiBrains.com
+script(src='../public/bootstrap/js/jquery-3.3.1.min.js')
+script(src='../public/bootstrap/js/popper.min.js')
+script(src='../public/bootstrap/js/bootstrap.js')
+script(src='../public/bootstrap/js/mdb.js')

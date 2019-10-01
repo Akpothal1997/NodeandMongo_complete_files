@@ -1,0 +1,266 @@
+/* Add Your Styles Here */
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+}
+
+/*  ------------ Main Header -------------- */
+.main-header{
+    background: white url("../images/image5.jpeg") no-repeat scroll center;
+    padding: 12px;
+    color: white;
+    text-align: right;
+}
+
+/* ------------------ Main Navbar ---------------- */
+.main-nav{
+    background-color: black;
+    padding: 5px;
+    box-shadow: 0 0 5px black;
+}
+.main-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    margin: 0 3px;
+}
+.main-nav a:hover{
+    background-color: #603427;
+    border-radius: 50px;
+    box-shadow: 0 0 5px white;
+}
+.main-nav a.active{
+    background-color: darkred;
+    border-radius: 50px;
+    box-shadow: 0 0 5px white;
+}
+
+/* ----------------- Home News Section ------------------ */
+.home-news-section{
+    text-align: center;
+}
+.home-news-article{
+    border: 2px solid darkred;
+    width: 330px;
+    height: 500px;
+    display: inline-grid; /* ---- New  --- */
+    text-align: center;
+    margin: 15px 5px;
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.5s;
+}
+.home-news-article:hover{
+    width: 340px;
+    box-shadow: 0 0 10px darkred;
+    cursor: pointer;
+}
+.home-news-article img{
+    width: 100%;
+}
+.home-news-article h2{
+    color: darkred;
+}
+
+/* ---------------- Main News Section ----------------- */
+.main-news-section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.main-news-article{
+    box-shadow: 0 0 10px darkred;
+    border-radius: 10px;
+}
+.main-news-article h2{
+    background: linear-gradient(45deg,#603427,black,#603427);
+    padding: 20px;
+    color: white;
+   border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.main-news-article p{
+    font-size: 18px;
+    padding: 15px;
+    color: darkred;
+}
+.zoom{
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #603427;
+    overflow: hidden;
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+
+/* ---------------- Main Footer ----------------- */
+.main-footer{
+    background: linear-gradient(45deg,#603427,black,#603427);
+    padding: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 5px #603427;
+}
+.main-footer a{
+    color: orange;
+}
+
+/* ------------------ Gallery Section ----------------- */
+.gallery-section{
+    text-align: center;
+    margin: 10px 0;
+}
+.gallery-figure{
+    border: 2px solid darkred;
+    width: 300px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.gallery-figure:hover{
+    box-shadow: 0 0 10px darkred;
+}
+.gallery-zoom{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.gallery-zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.gallery-zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+.gallery-figure figcaption{
+    color: darkred;
+    padding: 10px;
+}
+
+/* --------------- About Section ----------------- */
+.about-section{
+    width: 80%;
+    margin: auto;
+}
+.about-article{
+    background: white url("../images/gallery_mobile_3.jpg") no-repeat scroll top;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 0 10px darkred;
+}
+.company-images{
+    text-align: center;
+}
+.company-images img{
+    width: 250px;
+    height: 150px;
+    margin: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 5px black;
+}
+
+/* --------------- Contact Section ---------------- */
+.contact-section{
+    background: white url("../images/image5.jpeg") no-repeat scroll bottom;
+    padding: 15px;
+}
+.contact-article{
+    background-color: rgba(0,0,0,0.5);
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 10px #ccb499;
+    border-radius: 10px;
+    padding: 15px;
+}
+.contact-article h2{
+    color: #ccb499;
+}
+.contact-form .inputField{
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 200px;
+    margin: 5px;
+    background-color: transparent;
+    color: white;
+    border-bottom: 3px solid #5e5147;
+}
+.contact-form .inputField:focus{
+    border-bottom: 3px solid #ccb499;
+}
+::placeholder{
+    color:#ccb499 ;
+}
+
+.contact-form textarea{
+    border: 3px solid #5e5147;
+    outline: none;
+    background-color: transparent;
+    margin: 5px;
+    width: 180px;
+    border-radius: 5px;
+    color: white;
+}
+.contact-form textarea:focus{
+    border: 3px solid #ccb499;
+}
+.contact-form #submit-btn{
+    background-color: #5e5147;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+}
+.contact-form #submit-btn:hover{
+    box-shadow: 0 0 5px #ccb499;
+    cursor: pointer;
+}
+
+.page-not-found{
+    color: white;
+    text-align: center;
+}
+.page-not-found h1{
+    font-size: 40px;
+}
+.page-not-found p{
+    font-size: 20px;
+}
+
+/* ----------------- Media Queries ------------------- */
+@media (max-width: 500px) {
+    .zoom{
+        width: 300px;
+        height: 150px;
+    }
+}
+@media (min-width: 501px) and (max-width:800px) {
+    .zoom{
+        width: 380px;
+        height: 200px;
+    }
+}

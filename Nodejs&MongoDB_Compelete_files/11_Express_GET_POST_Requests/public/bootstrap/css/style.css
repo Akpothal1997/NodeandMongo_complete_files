@@ -1,0 +1,45 @@
+/* Your custom styles */
+.carousel .carousel-indicators li {
+    width: 30px;
+    height: 5px;
+    border-radius: 0%;
+    cursor: pointer;
+}
+
+.bg-success , .btn-success{
+    background: linear-gradient(45deg,black,green);
+}
+.bg-teal , .btn-teal{
+    background: linear-gradient(45deg,black,teal);
+}
+.bg-warning , .btn-warning{
+    background: linear-gradient(45deg,black,orangered);
+}
+.bg-danger , .btn-danger{
+    background: linear-gradient(45deg,black,red);
+}
+.bg-primary , .btn-primary{
+    background: linear-gradient(45deg,black,blue);
+}
+.bg-secondary, .btn-secondary{
+    background: linear-gradient(45deg,black,purple);
+}
+.bg-info , .btn-info{
+    background: linear-gradient(45deg,black,lightseagreen);
+}
+.text-primary{
+    color: darkblue !important;
+}
+.text-success{
+    color: darkgreen !important;
+}
+.text-warning{
+    color: orangered !important;
+}
+.text-danger{
+    color: darkred !important;
+}
+.text-teal{
+    color: #002f2f !important;
+    text-shadow: 0 0 2px white;
+}

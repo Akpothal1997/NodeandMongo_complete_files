@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../public/bootstrap/css/style.css">
+    <title>Express EJS</title>
+</head>
+<body>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-success">
+    <a class="navbar-brand" href="/">Express EJS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item px-2">
+                <a class="nav-link" href="/">
+                   <i class="fa fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link" href="/about">
+                    <i class="fa fa-id-card"></i> About Us</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link" href="/services">
+                    <i class="fa fa-cogs"></i> Services</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link" href="/profile">
+                    <i class="fa fa-user-circle"></i> Profile</a>
+            </li>
+            <li class="nav-item px-2 active">
+                <a class="nav-link" href="/contact">
+                    <i class="fa fa-envelope"></i> Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contact Success Page -->
+<div class="container m-3">
+    <div class="row">
+        <div class="col m-auto">
+            <div class="alert alert-success animated flipInY" role="alert">
+                <button class="close" data-dismiss="alert">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+                <h2 class="alert-heading">Thank You! Mr . <%= userInfo.username %></h2>
+                <p class="lead">We found the following data</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        NAME : <span class="font-weight-bold text-success">
+                            <%= userInfo.username %>
+                        </span>
+                    </li>
+                    <li class="list-group-item">
+                        EMAIL : <span class="font-weight-bold text-success">
+                            <%= userInfo.email %>
+                        </span>
+                    </li>
+                    <li class="list-group-item">
+                        DESIGNATION : <span class="font-weight-bold text-success">
+                            <%= userInfo.designation %>
+                        </span>
+                    </li>
+                    <li class="list-group-item">
+                        ADDRESS : <span class="font-weight-bold text-success">
+                            <%= userInfo.address %>
+                        </span>
+                    </li>
+                </ul>
+                <hr>
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content Section -->
+<section>
+    <div class="jumbotron">
+        <h1 class="display-4 text-success">Get In Touch</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at aut autem dicta earum eius, est eveniet illum inventore ipsam itaque labore nam nemo, nihil reprehenderit tempora totam! Amet cupiditate ea excepturi explicabo fugiat fugit itaque quas quos tempore, vitae.</p>
+
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad architecto autem consectetur dolore excepturi fugiat hic id illo labore, maxime molestias nihil nulla optio quisquam, quo recusandae ullam, vero. Commodi doloremque eos expedita fugit id nemo nobis obcaecati odit provident, saepe suscipit tenetur totam unde veniam voluptatibus? Illo, voluptas!</p>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at aut autem dicta earum eius, est eveniet illum inventore ipsam itaque labore nam nemo, nihil reprehenderit tempora totam! Amet cupiditate ea excepturi explicabo fugiat fugit itaque quas quos tempore, vitae.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>
+    </div>
+</section>
+
+<!-- Main Footer -->
+<footer class="p-3 text-white bg-success text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Copyright &copy; 2019 , Express EJS</h3>
+                <h6>All Rights Reserved</h6>
+                <h6>Developed & Maintained by
+                    <a class="text-white" href="https://github.com/thenaveensaggam" target="_blank">
+                        <i class="fa fa-snowflake"></i> UiBrains.com
+                    </a>
+                </h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../public/bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="../public/bootstrap/js/popper.min.js"></script>
+<script src="../public/bootstrap/js/bootstrap.js"></script>
+<script src="../public/bootstrap/js/mdb.js"></script>
+</body>
+</html>

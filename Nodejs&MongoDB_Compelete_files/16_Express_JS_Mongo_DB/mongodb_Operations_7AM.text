@@ -1,0 +1,40 @@
+---------------------------------------------------
+					LOCAL DATA BASE
+----------------------------------------------------
+INSERT RECORDS
+--------------
+let employeeOne = {
+    name : 'John',
+    age : 40,
+    designation : 'Project Manager',
+    active : true
+};
+
+// Insert a single document
+db.collection('employee').insertOne(employeeOne, function(err, r) {
+    console.log('employee is inserted to database');
+    client.close();
+});
+
+
+INSERT MULITPLE RECORDS
+------------------------
+let employees = [
+    {
+        name : 'Rajan',
+        age : 25,
+        designation : 'Software Engineer',
+        active : true
+    },
+    {
+        name : 'Mahesh',
+        age : 35,
+        designation : 'Team Lead',
+        active : false
+    }
+];
+
+db.collection('employee').insertMany(employees, function(err, r) {
+    console.log('employees are inserted to database');
+    client.close();
+});
